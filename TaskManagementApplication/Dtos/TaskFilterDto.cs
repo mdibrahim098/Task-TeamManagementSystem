@@ -16,5 +16,14 @@ namespace TaskManagementApplication.Dtos
         public DateTime? DueDateTo { get; set; }
 
 
+        // Pagination
+        public int PageNumber { get; set; } = 1; // default first page
+        public int PageSize { get; set; } = 10;  // default 10 items per page
+
+        // Sorting
+        public string? SortBy { get; set; } = "Id";       // default sort column
+        public string SortDirection { get; set; } = "asc"; // "asc" or "desc"
+
+
     }
 }

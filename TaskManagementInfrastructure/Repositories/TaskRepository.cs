@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TaskManagementApplication.Dtos;
-
-namespace TaskManagementInfrastructure.Repositories
+﻿namespace TaskManagementInfrastructure.Repositories
 {
     public class TaskRepository : ITaskRepository
     {
@@ -69,6 +62,19 @@ namespace TaskManagementInfrastructure.Repositories
 
             if (filter.DueDateTo.HasValue)
                 query = query.Where(t => t.DueDate <= filter.DueDateTo.Value);
+
+
+            // Sorting
+            if (!string.IsNullOrEmpty(filter.SortBy))
+            {
+                query = filter.SortDirection.ToLower() == "desc"
+                    ? query.OrderByDescendingDynamic(filter.SortBy)
+                    : query.OrderByDynamic(filter.SortBy);
+            }
+
+            // Pagination
+            var skip = (filter.PageNumber - 1) * filter.PageSize;
+            query = query.Skip(skip).Take(filter.PageSize);
 
             return await query.ToListAsync();
         }
