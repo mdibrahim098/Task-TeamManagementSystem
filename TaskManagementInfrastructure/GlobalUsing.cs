@@ -5,6 +5,8 @@ global using TaskManagementApplication.Interfaces;
 global using System.Linq.Expressions;
 global using TaskManagementApplication.Dtos;
 global using TaskManagementInfrastructure.Helper;
+global using Microsoft.AspNetCore.Http;
+global using TaskManagementDomain.Enums;
 
 
 

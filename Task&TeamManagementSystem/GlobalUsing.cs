@@ -3,3 +3,7 @@ global using TaskManagementApplication.Interfaces;
 global using TaskManagementInfrastructure.Data;
 global using TaskManagementInfrastructure.Repositories;
 global using TaskManagementInfrastructure.Seed;
+global using Microsoft.AspNetCore.Mvc;
+global using TaskManagementApplication.Dtos;
+global using TaskManagementDomain.Entities;
+global using TaskManagementDomain.Enums;
