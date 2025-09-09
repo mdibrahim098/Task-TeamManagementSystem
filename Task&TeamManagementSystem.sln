@@ -1,9 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36414.22 d17.14
+VisualStudioVersion = 17.14.36414.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task&TeamManagementSystem", "Task&TeamManagementSystem\Task&TeamManagementSystem.csproj", "{46082C27-8571-4463-AACD-1CE0B1F633C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManagementDomain", "TaskManagementDomain\TaskManagementDomain.csproj", "{5EDD649F-0EC9-49D9-B439-B7A7AB5F374D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManagementInfrastructure", "TaskManagementInfrastructure\TaskManagementInfrastructure.csproj", "{BD899263-F3FA-4037-9DFB-FDD4858A6FFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManagementApplication", "TaskManagementApplication\TaskManagementApplication.csproj", "{750FCB5D-1817-45BF-A12E-F762F912C9FE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{46082C27-8571-4463-AACD-1CE0B1F633C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46082C27-8571-4463-AACD-1CE0B1F633C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46082C27-8571-4463-AACD-1CE0B1F633C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EDD649F-0EC9-49D9-B439-B7A7AB5F374D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EDD649F-0EC9-49D9-B439-B7A7AB5F374D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EDD649F-0EC9-49D9-B439-B7A7AB5F374D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EDD649F-0EC9-49D9-B439-B7A7AB5F374D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD899263-F3FA-4037-9DFB-FDD4858A6FFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD899263-F3FA-4037-9DFB-FDD4858A6FFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD899263-F3FA-4037-9DFB-FDD4858A6FFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD899263-F3FA-4037-9DFB-FDD4858A6FFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{750FCB5D-1817-45BF-A12E-F762F912C9FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{750FCB5D-1817-45BF-A12E-F762F912C9FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{750FCB5D-1817-45BF-A12E-F762F912C9FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{750FCB5D-1817-45BF-A12E-F762F912C9FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
